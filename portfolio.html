@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+
+        <script>
+            function expandLayout(projectId) 
+            {
+                const wrapper = document.querySelector('.layout_wrapper');
+                const centerInfo = document.querySelector('.center_info');
+
+                // Add the 'expanded' layout class
+                wrapper.classList.add('expanded');
+
+                // Content map for each project
+                const projectContent = {
+                    GPS: `<h2>Galactic Postal Servitude</h2>
+                        <p>A game about delivering space mail across galaxies.</p>
+                        <img src="galactic_postal.png" alt="Galactic Postal Screenshot" />`,
+
+                    DX11: `<h2>Direct X11 Scene</h2>
+                        <p>A 3D graphics scene rendered with DirectX 11.</p>
+                        <img src="directx_scene.png" alt="DirectX Scene" />`,
+
+                    OGL: `<h2>OpenGL Scene</h2>
+                        <p>Real-time rendering using OpenGL with lighting and shadows.</p>
+                        <img src="opengl_scene.png" alt="OpenGL Scene" />`,
+
+                    TinC: `<h2>Two in the Chamber</h2>
+                                <p>A multiplayer arena shooter with limited ammo.</p>
+                                <img src="two_in_the_chamber.png" alt="Two in the Chamber Screenshot" />`,
+
+                    BHI: `<h2>Bullet Hell Infinite</h2>
+                        <p>An infinite bullet hell survival game.</p>
+                        <img src="bullethellinfinite.png" alt="Bullet Hell Infinite Screenshot" />`,
+
+                    BTM: `<h2>Bullet Type Mechanic</h2>
+                        <p>Experimentation with different bullet types and player mechanics.</p>
+                        <img src="bullet_type.png" alt="Bullet Type Mechanic Screenshot" />`,
+                };
+
+                // Set center content
+                centerInfo.innerHTML = projectContent[projectId] || '<p>Content not found.</p>';
+
+                // Ensure it's visible
+                centerInfo.style.display = block;
+            }
+        </script>
+
+    </head>
+
+    <body> 
+
+        <div class="nav_bar">
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+
+        </div>
+
+        <div class="content">
+            <div class = "page_title">
+                <h1><i>Portfolio</i></h1>
+            </div>
+
+            <div class="layout_wrapper">
+                <div class="grid_area">
+                    <!-- Left items -->
+                    <div class="left_grid">
+                        <div class="grid_item" onclick="expandLayout('GPS')">Galactic Postal Servitude</div>
+                        <div class="grid_item" onclick="expandLayout('DX11')">Direct X11 Scene</div>
+                        <div class="grid_item" onclick="expandLayout('OGL')">OpenGL Scene</div>
+                    </div>
+
+                    <!-- Center content -->
+                    <div class="center_info">
+                        <img src="bullethellinfinite.png" alt="Preview" />
+                    </div>
+
+                    <!-- Right items -->
+                    <div class="right_grid">
+                        <div class="grid_item" onclick="expandLayout('TinC')">Two in the Chamber</div>
+                        <div class="grid_item" onclick="expandLayout('BHI')"><img style="vertical-align: middle;" src="basicFiringEnemy.png" height="45" width="37"> <span>Bullet Hell Infinite</span></div>
+                        <div class="grid_item" onclick="expandLayout('BTM')">Bullet Type Mechanic</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+.nav_bar > ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+
+.nav_bar > ul > li {
+    float: left;  
+    display: block;
+    padding: 8px;
+}
+
+.nav_bar > ul > li:hover {
+    float: left;  
+    display: block;
+    background-color: #e6f4ff;
+}
+
+.content
+{
+    margin-left: 5%;
+    margin-right: 5%;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.page_title
+{
+    text-align: center;
+    font-size: 30pt;
+}
+
+
+/* Initial layout */
+.grid_area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Make inner groups behave as one in grid */
+.left_grid,
+.right_grid {
+  display: contents; /* So items sit directly in the grid */
+}
+
+.center_info {
+    display:none;
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    height: 500px;
+}
+
+
+/* Grid items */
+.grid_item {
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 60px;
+}
+
+
+/* EXPANDED layout */
+.layout_wrapper.expanded .grid_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+
+/* Now the groups become actual columns */
+.layout_wrapper.expanded .left_grid,
+.layout_wrapper.expanded .right_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.layout_wrapper.expanded .center_info {
+    display: flex;
+    flex: 2;
+    margin: 0 20px;
+}
