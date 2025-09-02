@@ -1,95 +1,162 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>AATT Dev</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
 
         <script>
-            function expandLayout(projectId) 
-            {
-                const wrapper = document.querySelector('.layout_wrapper');
-                const centerInfo = document.querySelector('.center_info');
-
-                // Add the 'expanded' layout class
-                wrapper.classList.add('expanded');
-
-                // Content map for each project
-                const projectContent = {
-                    GPS: `<h2>Galactic Postal Servitude</h2>
-                        <p>A game about delivering space mail across galaxies.</p>
-                        <img src="galactic_postal.png" alt="Galactic Postal Screenshot" />`,
-
-                    DX11: `<h2>Direct X11 Scene</h2>
-                        <p>A 3D graphics scene rendered with DirectX 11.</p>
-                        <img src="directx_scene.png" alt="DirectX Scene" />`,
-
-                    OGL: `<h2>OpenGL Scene</h2>
-                        <p>Real-time rendering using OpenGL with lighting and shadows.</p>
-                        <img src="opengl_scene.png" alt="OpenGL Scene" />`,
-
-                    TinC: `<h2>Two in the Chamber</h2>
-                                <p>A multiplayer arena shooter with limited ammo.</p>
-                                <img src="two_in_the_chamber.png" alt="Two in the Chamber Screenshot" />`,
-
-                    BHI: `<h2>Bullet Hell Infinite</h2>
-                        <p>An infinite bullet hell survival game.</p>
-                        <img src="bullethellinfinite.png" alt="Bullet Hell Infinite Screenshot" />`,
-
-                    BTM: `<h2>Bullet Type Mechanic</h2>
-                        <p>Experimentation with different bullet types and player mechanics.</p>
-                        <img src="bullet_type.png" alt="Bullet Type Mechanic Screenshot" />`,
-                };
-
-                // Set center content
-                centerInfo.innerHTML = projectContent[projectId] || '<p>Content not found.</p>';
-
-                // Ensure it's visible
-                centerInfo.style.display = block;
+        function handleProjectClick(id) {
+            var x = document.getElementById(id)
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
             }
-        </script>
-
+        }
+    </script>
     </head>
 
     <body> 
-
-        <div class="nav_bar">
-
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
-
+        <div class="page_header">
+        <h1><b style="color: red;font-size: larger;">A. </b>Alexander <b style="color: red; font-size: larger;">T. </b>Thomson Dev</h1>
         </div>
 
         <div class="content">
-            <div class = "page_title">
-                <h1><i>Portfolio</i></h1>
-            </div>
+                <div class = "fixed_content">
 
-            <div class="layout_wrapper">
-                <div class="grid_area">
-                    <!-- Left items -->
-                    <div class="left_grid">
-                        <div class="grid_item" onclick="expandLayout('GPS')">Galactic Postal Servitude</div>
-                        <div class="grid_item" onclick="expandLayout('DX11')">Direct X11 Scene</div>
-                        <div class="grid_item" onclick="expandLayout('OGL')">OpenGL Scene</div>
+                    <div class="box">
+                        <img id = "about_me_pic" src="Images\picture of me.JPG" style="border-radius: 5px; border: solid 2px black;"> 
+                        <p id = "about_me">Hey! <br> I'm Alexander, a Computer Game Applications Development student at Abertay University. <br> And this is some of my work!</p>
+  
                     </div>
 
-                    <!-- Center content -->
-                    <div class="center_info">
-                        <img src="bullethellinfinite.png" alt="Preview" />
+                    <div class="box">
+                        <img id = "rotating_highlight" style="height: 400; width: 600px; border: solid 1px black;" src="pic1.png">
                     </div>
 
-                    <!-- Right items -->
-                    <div class="right_grid">
-                        <div class="grid_item" onclick="expandLayout('TinC')">Two in the Chamber</div>
-                        <div class="grid_item" onclick="expandLayout('BHI')"><img style="vertical-align: middle;" src="basicFiringEnemy.png" height="45" width="37"> <span>Bullet Hell Infinite</span></div>
-                        <div class="grid_item" onclick="expandLayout('BTM')">Bullet Type Mechanic</div>
-                    </div>
+                    <img>
                 </div>
-            </div>
+
+                <div class = "scrolling_content">
+                    <div class = "project_block" onclick="handleProjectClick('gps')">
+                        <h3>Galactic Postal Servitude</h3>
+                        <p>DARE Academy Finalist</p>
+                        <p>Point and click game where you approve and deny parcels being sent by aliens</p>
+                    </div>
+
+                    <div id="gps"  class="expanded_project_info" style="display: none;" >
+                        <p style="text-align: center;">First created as part of university coursework and then later massively expanded upon as part of DARE Academy. <br> GPS is an Unreal Engine 5 point and click game that I worked on as one of two programmers.</p>
+                           
+                        <div style="float:left; margin: 5px; max-width: 45%;">
+                            
+                            <ul>
+                                <p style="text-align: left;"><u>Features worked on from university project</u></p>
+                                <li>Parcel generation</li>
+                                <li>Stamping</li>
+                                <li>Journal system</li>
+                                <li>Save system</li>
+                                <li>Scoring system</li>
+                            </ul>
+
+                            <ul>
+                                <p style="text-align: left;"><u>Features worked on during DARE</u></p>
+                                <li>Multiple day system</li>
+                                <li>Parcel generation rework</li>
+                                <li>Fragile taping</li>
+                                <li>Reworked item database</li>
+                                <li>Daily bans and rules</li>
+                                <li>Scoring system rework</li>
+                                <li>Tutorial popups</li>
+                            </ul>
+                        </div>
+                        <iframe style="float: right; margin-bottom: 10px;" width="50%" height="250px" src="https://www.youtube.com/embed/tKXbaev4OFI?si=TqrxoiVsMcyEmHA6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+
+                        <a href="https://riverboatgames.itch.io/galactic-postal-servitude"">University version download</a>
+                        <a href="https://riverboatgames.itch.io/galactic-postal-servitude">DARE version download (update)</a>
+
+                    
+                    </div>
+
+                    <div class = "project_block" onclick="handleProjectClick('dx11')">
+                        <h3>River Scene</h3>
+                        <p>Direct X11 scene featuring a customisable river and simulated waves</p>
+                    </div>
+
+                    <div id="dx11" class="expanded_project_info" style="display: none;" >
+                        <p style="text-align: center;">Project Summary here</p>
+                           
+                        <div style="float:left; margin: 5px;">
+                            
+                            <ul>
+                                <p style="text-align: left;"><u>Features</u></p>
+                                <li>Gerstner wave simulation</li>
+                                <li>Customisable river terrain</li>
+                                <li>Dynamic and static tessellation</li>
+                                <li>Bloom with compute shader</li>
+                                <li>Directional, spot, and point lights</li>
+                                <li>Depth map shadows</li>
+                                <li>Model loading</li>
+                                <li>Blinn-Phong specular highlights</li>
+                            </ul>
+
+                        </div>
+                        <iframe style="float: right; margin-bottom: 10px;" width="50%" height="250px" src="https://www.youtube.com/embed/pZnsJxjVMNE?si=HxT3KdsUFWFuPhou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <iframe src="https://itch.io/embed/3170395" width="552" height="167" frameborder="0"><a href="https://essith.itch.io/direct-x11-scene">Direct X11 scene by Alexander Thomson</a></iframe>
+                    </div>
+
+
+                    <div class = "project_block" onclick="handleProjectClick('ogl')">
+                        <h3>Bookstore Scene</h3>
+                        <p>OpenGL scene in bookstore</p>
+                    </div>
+
+                    <div id="ogl" class="expanded_project_info" style="display: none;" >
+                        <p style="text-align: center;">Project Summary here</p>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jbEG_Spt3g8?si=1U2cm6zkSSfGImPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe frameborder="0" src="https://itch.io/embed/3170416" width="552" height="167"><a href="https://essith.itch.io/opengl-scene">OpenGL Scene by Alexander Thomson</a></iframe>
+                    </div>
+
+                    <div class = "project_block" onclick="handleProjectClick('btse')">
+                        <h3>Bullet Types and Status Effects Mechanic</h3>
+                        <p>Unreal Engine 5 code project where different bullets apply different effects to objects in the scene</p>
+                    </div>
+
+                    <div id="btse" class="expanded_project_info" style="display: none;" >
+                        <p style="text-align: center;">Project Summary here</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ug6RsjUxKQs?si=46UIhiXoB5fasumv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe height="167" frameborder="0" src="https://itch.io/embed/3856375" width="552"><a href="https://essith.itch.io/ue5-bullet-type-and-status-effects">UE5 Bullet Type and Status Effects by Alexander Thomson</a></iframe>
+                    </div>
+
+                    <div class = "project_block" onclick="handleProjectClick('titc')">
+                        <h3>Two in the Chamber</h3>
+                        <p>PS5 Arena fighter where two players can collect different weapons, made using Skateboard Engine</p>
+                    </div>
+
+                    <div id="titc" class="expanded_project_info" style="display: none;" >
+                        <p style="text-align: center;">Project Summary here</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HKPLEa034f0?si=VmnW4WFxnrGC6Km-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+
+                    <div class = "project_block" onclick="handleProjectClick('bhi')">
+                        <h3>Bullet Hell Infinite</h3>
+                        <p>Infinite runner bullet hell made using SFML</p>
+                    </div>
+
+                    <div id="bhi" class="expanded_project_info" style="display: none;" >
+                        <p style="text-align: center;">Project Summary here</p>
+                   
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/96GMXWLxU6I?si=yDEMXBunSgTc49zq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://itch.io/embed/2072994" width="552" height="167" frameborder="0"><a href="https://essith.itch.io/bullet-hell-infinite">Bullet Hell Infinite by Alexander Thomson</a></iframe>
+                    </div>
+
+                </div>
         </div>
+
     </body>
 </html>
