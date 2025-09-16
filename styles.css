@@ -30,6 +30,12 @@ body{
     height: 100%;
 }
 
+#fixed_wrapper{
+    background-color: lightgrey;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+}
 
 .scrolling_content{
     background-color: rgb(255, 255, 255);
@@ -63,18 +69,20 @@ background-color: rgb(233, 233, 233);
 }
 
 #about_me{
-    max-width: 30%;
-    margin-right: 15px;
-    float: right;
     overflow-wrap: break-word;
     hyphens: manual;
-    text-align: left;
+    text-align: center;
+     display: block;
 }
 
 #about_me_pic
 {
-    max-width: 60%;
-    float:left;
+    width: 100%;
+    border-radius: 16px;
+
+      display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #rotating_higlight{
