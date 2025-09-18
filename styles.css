@@ -34,6 +34,29 @@ body {
     padding-bottom: 1px;
 }
 
+.scrolling_content {
+    background-color: #3E3579;
+    position: relative;
+    float: right;
+    width: 65%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .fixed_content{
+    position: relative;
+    width: 100%;
+  } 
+  
+  .scrolling_content{
+    width: 100%;
+  }
+
+  #page_header{
+    display: none;
+  }
+}
+
 #about_me {
     overflow-wrap: break-word;
     hyphens: manual;
@@ -73,14 +96,6 @@ body {
     border-radius: 20px;
     padding: 15px;
     margin: 15px;
-}
-
-.scrolling_content {
-    background-color: #3E3579;
-    position: relative;
-    float: right;
-    width: 65%;
-    height: 100%;
 }
 
 .box{
