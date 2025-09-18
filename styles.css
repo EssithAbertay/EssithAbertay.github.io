@@ -35,33 +35,28 @@ body {
 }
 
 .content{
-    padding-top: 115px;
+    /*padding-top: 115px;*/
     height: 90%;
     width: 100%;
 }
 
 .fixed_content {
     background-color: #3E3579;
-    position: fixed;
+    position: sticky;
     float: left;
     width: 35%;
     height: 100%;
+
 }
 
-.fixed_box_wrapper{
-    padding: 5px;
-    padding-top: 0px;
-    margin: 5px;
+.fixed_box{
     background-color: #5346A8;
     border-radius: 16px;
+    margin-bottom: 15px;
     text-align: center;
     overflow:hidden;   
 }
 
-.fixed_box_wrapper>.box>p{
-    padding: 3px;
-    margin: 3px;
-}
 #about_me {
     overflow-wrap: break-word;
     hyphens: manual;
@@ -70,18 +65,24 @@ body {
 }
 
 #about_me_pic {
-    max-width: 100%;
+    max-width:100%;
+    max-height:100%;
+    height: auto;
     border-radius: 16px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 15px;
+}
+
+.social_media{
+    margin: 15px;
+    height: 50px;
+    width: 50px;
 }
 
 .section_wrapper{
     background-color: darkslateblue;
     border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
+    padding: 15px;
+    margin: 15px;
 }
 
 .scrolling_content {
@@ -90,8 +91,8 @@ body {
     float: right;
     width: 65%;
     height: 100%;
-}
 
+}
 
 .box{
     padding: 0px;
@@ -101,12 +102,11 @@ body {
 .highlighted_project{
     padding: 15px;
     padding-top: 0px;
-    margin: 15px;
+    margin-bottom: 15px;
     background-color: #5346A8;
     border-radius: 16px;
     text-align: center;
     overflow:hidden;   
-    
 }
 
 .highlighted_project_text{
@@ -120,7 +120,6 @@ body {
     background-color: #5a4cb8;
 }
 
-
 .flex{
     display:flex;
     margin: 5px;
@@ -129,7 +128,7 @@ body {
 .project_block
 {
     padding: 5px;
-    margin: 15px;
+    margin-bottom: 15px;
     overflow: hidden;
     border-radius: 16px;
     background-color: #5346A8;;
@@ -147,7 +146,7 @@ color:black;
 
 .expanded_project {
     padding: 15px;
-    margin: 15px;
+    margin-bottom: 15px;
     background-color: #5346A8;
     overflow: hidden;
     border-radius: 16px;
