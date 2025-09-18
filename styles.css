@@ -17,17 +17,12 @@ body {
     justify-content: center;
 }
 
-.content{
-    height: 100vh;
-}
-
-
 .fixed_content {
     background-color: #3E3579;
     position: fixed;
     float: left;
     width: 35%;
-    height: 100vh;
+    height: 95vh;
 }
 
 .fixed_box{
@@ -58,7 +53,10 @@ body {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
-
+#skills>div>p{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
 #exp_and_awards>p{
     margin-top: 0.25em;
     margin-bottom: 0.25em;
@@ -140,8 +138,7 @@ body {
 }
 
 .project_block:hover{
-background-color: rgb(233, 233, 233);
-color:black;
+    background-color: #6859cf;
 }
 
 
