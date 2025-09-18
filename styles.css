@@ -42,7 +42,7 @@ body {
     height: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .fixed_content{
     position: relative;
     width: 100%;
