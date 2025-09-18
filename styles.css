@@ -18,11 +18,9 @@ body {
 }
 
 .fixed_content {
-    background-color: #3E3579;
     position: fixed;
-    float: left;
     width: 35%;
-    height: 95vh;
+    display: inline-block;
 }
 
 .fixed_box{
@@ -30,8 +28,10 @@ body {
     border-radius: 16px;
     margin-bottom: 15px;
     text-align: center;
-    overflow:hidden;   
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 #about_me {
