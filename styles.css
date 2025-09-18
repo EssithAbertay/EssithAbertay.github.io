@@ -56,16 +56,16 @@ body {
 #skills>div>p{
     margin-top: 0.25em;
     margin-bottom: 0.25em;
-}
+}   
 #exp_and_awards>p{
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
 .social_media{
-    margin: 15px;
-    height: 50px;
-    width: 50px;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
 }
 
 .section_wrapper{
