@@ -38,15 +38,20 @@
                 x.style.display = "none";
             }
         }
-    </script>
+
+        function handlePictureClick(){
+            var face = document.getElementById("about_me_pic");
+            face.src = "images/pic of me with gleeble.png";
+        }
+        </script>
     </head>
 
     <body> 
         <div class="fixed_content">
             <div class="section_wrapper" style="margin-right: 7.5px;"> 
                 
-                <img id="about_me_pic" src="images/picture of me.JPG" alt="A picture of me, Alexander Thomson, stood in front of my DARE Academy booth presenting Galactic Postal Servitude">
-                
+                <img id="about_me_pic" src="images/picture of me.JPG" alt="A picture of me, Alexander Thomson, stood in front of my DARE Academy booth presenting Galactic Postal Servitude" onclick="handlePictureClick()" style="z-index: 1;">
+
                 <div class = "fixed_box">
                         <p id="about_me">I'm Alexander, a Computer Game Applications Development student in my fourth year at Abertay University.<br>I'm constantly working on various projects but in my free time I captain the Abertay men's hockey team and play games with friends</p>
                 </div>
