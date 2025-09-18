@@ -8,7 +8,7 @@ body {
     background-color: #3E3579;
 }
 
-.page_header {
+#page_header {
     background-color:#5346A8;
     margin-bottom: 15px;
     border-radius: 16px;
