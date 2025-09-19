@@ -8,6 +8,11 @@ body {
     background-color: #3E3579;
 }
 
+
+.title_highlight{
+    color:red;
+}
+
 #page_header {
     background-color:#5346A8;
     margin-bottom: 15px;
@@ -15,6 +20,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#page_header>h1>b{
+       color: red; 
+    font-size: larger;
 }
 
 .fixed_content {
@@ -114,6 +124,11 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 15px;
+    
+}
+
+.highlighted_project_title>h2{
+    font-size:;
 }
 
 .flex{
