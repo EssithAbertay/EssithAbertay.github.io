@@ -261,13 +261,15 @@ body {
 
 .highlighted_project_text{
     width: 100%;
-    padding: 0px;
+    padding: 5px;
     padding-top: 0px;
     margin-top: 0px;
     margin-right: 0px;
 
     margin-bottom: 15px;
     border-radius: 16px;
+
+    text-align: center;
 }
 
 .highlighted_project_text_description{
