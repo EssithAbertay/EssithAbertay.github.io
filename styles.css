@@ -213,7 +213,7 @@ body {
     margin-right: 15px;
     }
 
-#scrolling_wrapper{
+  #scrolling_wrapper{
     margin-left: 15px;
     }
 
@@ -227,10 +227,12 @@ body {
   }
 
   .highlighted_project{
+    padding: 15px;
   }
 
   .highlighted_project_text{
     width: 100%;
+    float: none;
     margin-bottom: 15px;
   }
 
