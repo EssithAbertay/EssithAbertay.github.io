@@ -33,6 +33,33 @@ body {
     display: inline-block;
 }
 
+
+
+#fixed_section_about_me {
+    display: block;
+}
+
+#fixed_section_cv{
+    display: none;
+
+    #cv{
+        border-radius: 16px;
+    }
+}
+
+
+
+#fixed_section_gallery{
+    display: none;
+}
+
+
+
+
+
+
+
+
 .fixed_box{
     background-color: #5346A8;
     border-radius: 16px;

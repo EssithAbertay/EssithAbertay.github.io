@@ -43,6 +43,26 @@
             var face = document.getElementById("about_me_pic");
             face.src = "images/pic of me with gleeble.png";
         }
+
+        function handleFixedSectionSwap(id){
+            if(id === "abtme"){
+                document.getElementById("fixed_section_cv").style.display = "none";
+                document.getElementById("fixed_section_about_me").style.display = "block";
+                  document.getElementById("fixed_section_gallery").style.display = "none";
+            }
+            else if (id === "cv")
+            {
+                document.getElementById("fixed_section_cv").style.display = "block";
+                document.getElementById("fixed_section_about_me").style.display = "none";
+                document.getElementById("fixed_section_gallery").style.display = "none";
+            }
+            else if (id === "gallery")
+            {
+                document.getElementById("fixed_section_cv").style.display = "none";
+                document.getElementById("fixed_section_about_me").style.display = "none";
+                document.getElementById("fixed_section_gallery").style.display = "block";
+            }
+        }
         </script>
     </head>
 
@@ -50,60 +70,75 @@
         <div class="fixed_content">
             <div class="section_wrapper" id="fixed_wrapper"> 
                 
-                <img id="about_me_pic" src="images/picture of me.JPG" alt="A picture of me, Alexander Thomson, stood in front of my DARE Academy booth presenting Galactic Postal Servitude" onclick="handlePictureClick()" style="z-index: 1;">
+                <div id = "fixed_section_about_me" >
+                    <img id="about_me_pic" src="images/picture of me.JPG" alt="A picture of me, Alexander Thomson, stood in front of my DARE Academy booth presenting Galactic Postal Servitude" onclick="handlePictureClick()" style="z-index: 1;">
 
-                <div class = "fixed_box">
-                        <p id="about_me">I'm Alexander, a Computer Game Applications Development student in my fourth year at Abertay University.<br>I'm constantly working on various projects but in my free time I captain the Abertay men's hockey team and play games with friends.</p>
-                </div>
-
-                <div style="display: flex;">
-                    <div class = "fixed_box" id = "skills" style="width: 50%; margin-right: 7.5px;">
-                            <p style="margin-top: 0.5em;"><u><b>Core Skills</b></u></p>
-
-                            <div style="width: 50%; float: left;"> 
-                                <p>C++</p>
-                                <p>Unreal Engine</p>
-                                <p>Direct X11</p>
-                            </div>
-
-                            <div style="width: 50%;float: left;">
-                                <p>OpenGL</p>
-                                <p>SFML</p>
-                            </div>
+                    <div class = "fixed_box">
+                            <p id="about_me">I'm Alexander, a Computer Game Applications Development student in my fourth year at Abertay University.<br>I'm constantly working on various projects but in my free time I captain the Abertay men's hockey team and play games with friends.</p>
                     </div>
 
-                    <div class = "fixed_box" id = "exp_and_awards" style="width: 50%; margin-left: 7.5px;">                     
-                        <p style="margin-top: 0.5em;"><u><b>Notable Experience and Awards</b></u></p>
-                        <p>Research Assistant at Abertay University</p>
-                        <p>DARE Academy 2025 Finalist</p>
-                        <p>2018 BAFTA Young Game Design Finalist</p>
+                    <div style="display: flex;">
+                        <div class = "fixed_box" id = "skills" style="width: 50%; margin-right: 7.5px;">
+                                <p style="margin-top: 0.5em;"><u><b>Core Skills</b></u></p>
+
+                                <div style="width: 50%; float: left;"> 
+                                    <p>C++</p>
+                                    <p>Unreal Engine</p>
+                                    <p>Direct X11</p>
+                                </div>
+
+                                <div style="width: 50%;float: left;">
+                                    <p>OpenGL</p>
+                                    <p>SFML</p>
+                                </div>
+                        </div>
+
+                        <div class = "fixed_box" id = "exp_and_awards" style="width: 50%; margin-left: 7.5px;">                     
+                            <p style="margin-top: 0.5em;"><u><b>Notable Experience and Awards</b></u></p>
+                            <p>Research Assistant at Abertay University</p>
+                            <p>DARE Academy 2025 Finalist</p>
+                            <p>2018 BAFTA Young Game Design Finalist</p>
+                        </div>
+                    </div>
+
+                    <div class = "fixed_box">
+                            <p>Contact me!<br> <b><a style="color:white"href='mail&#116;o&#58;ari_a%6C&#101;xander&#64;&#111;&#117;%7&#52;lo&#37;&#54;F&#37;6B&#46;c%&#54;&#70;&#109;'>ari_al&#101;x&#97;&#110;&#100;er&#64;out&#108;ook&#46;co&#109;</a></b></p>
+                    </div>
+
+                    <div class = "fixed_box" style="margin-bottom: 0px;">
+            
+                            <a href="https://github.com/EssithAbertay"><img src = "images\github-mark-white.png" class = "social_media" alt="Image of Github logo"></a>
+                            <a href="https://www.linkedin.com/in/ari-alexander-tannahill-thomson/"><img src = "images\InBug-White.png"  class = "social_media" alt="Image of LinkedIn logo"></a>
+                            <a href="https://essith.itch.io/"><img src = "images\itchio-textless-white.svg"  class = "social_media" alt="Image of itch.io logo"></a>
+                            <a href="https://bsky.app/profile/essith.bsky.social"><img src = "images\white_bluesky.svg"  class = "social_media" alt="Image of Bluesky logo" style="color: white;"></a>
+                            
                     </div>
                 </div>
 
-                <div class = "fixed_box">
-                        <p>Contact me!<br> <b><a style="color:white"href='mail&#116;o&#58;ari_a%6C&#101;xander&#64;&#111;&#117;%7&#52;lo&#37;&#54;F&#37;6B&#46;c%&#54;&#70;&#109;'>ari_al&#101;x&#97;&#110;&#100;er&#64;out&#108;ook&#46;co&#109;</a></b></p>
+                <div id = "fixed_section_cv">
+                    <object data="files\CV.pdf" type="application/pdf" id="cv">
+                        <p>Your web browser doesn't have a PDF plugin.
+                        Instead you can <a href="files\CV.pdf">click here to
+                        download the PDF file.</a></p>
+                    </object>
                 </div>
 
-                <div class = "fixed_box" style="margin-bottom: 0px;">
-        
-                        <a href="https://github.com/EssithAbertay"><img src = "images\github-mark-white.png" class = "social_media" alt="Image of Github logo"></a>
-                        <a href="https://www.linkedin.com/in/ari-alexander-tannahill-thomson/"><img src = "images\InBug-White.png"  class = "social_media" alt="Image of LinkedIn logo"></a>
-                        <a href="https://essith.itch.io/"><img src = "images\itchio-textless-white.svg"  class = "social_media" alt="Image of itch.io logo"></a>
-                        <a href="https://bsky.app/profile/essith.bsky.social"><img src = "images\white_bluesky.svg"  class = "social_media" alt="Image of Bluesky logo" style="color: white;"></a>
-                        
+                <div id = "fixed_section_gallery">
+                   <p>Under Construction!</p>
                 </div>
+
             </div>
 
-            <div class="section_wrapper" id="fixed_wrapper" style="display: flex;"> 
-                <div class="fixed_button">
+            <div class="section_wrapper" id="fixed_wrapper" style="display: flex;" > 
+                <div class="fixed_button" onclick="handleFixedSectionSwap('abtme')">
                     <p>About Me</p>
                 </div>
 
-                <div class="fixed_button">
+                <div class="fixed_button"  onclick="handleFixedSectionSwap('cv')">
                     <p>CV</p>
                 </div>
 
-                <div class="fixed_button" style="margin-right: 0;">
+                <div class="fixed_button" style="margin-right: 0;"  onclick="handleFixedSectionSwap('gallery')">
                     <p>Gallery</p>
                 </div>
             </div>
