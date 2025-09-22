@@ -44,6 +44,19 @@ body {
     padding-bottom: 1px;
 }
 
+.fixed_button{
+    background-color: #5346A8;
+    border-radius: 16px;
+    text-align: center;
+    padding: 5px;
+    width: 33%;
+    margin-right: 15px;
+}
+
+.fixed_button:hover{
+   background-color: #6859cf;
+}
+
 .scrolling_content {
     background-color: #3E3579;
     position: relative;
@@ -125,10 +138,6 @@ body {
     padding-right: 0px;
     margin-bottom: 15px;
     
-}
-
-.highlighted_project_title>h2{
-    font-size:;
 }
 
 .flex{
