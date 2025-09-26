@@ -258,6 +258,24 @@ body {
     padding-right: 0px;
   } 
   
+  .fixed_box{
+    font-size: inherit;
+  }
+
+    #fixed_section_about_me {
+        height: inherit;
+    }
+
+    #fixed_section_cv{
+        height: inherit;
+    }
+
+    #fixed_section_gallery{
+        height: inherit;
+    }
+
+
+
   .scrolling_content{
     position: relative;
     display: block;
