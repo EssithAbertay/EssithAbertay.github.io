@@ -71,13 +71,15 @@ body {
     padding-left: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 0.7vw;
+    font-size: 90%;
 }
 
 .fixed_button{
     background-color: #5346A8;
     border-radius: 16px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     width: 33%;
     margin-right: 15px;

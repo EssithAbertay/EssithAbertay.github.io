@@ -68,6 +68,21 @@
 
     <body> 
         <div class="fixed_content">
+
+            <div class="section_wrapper" id="fixed_wrapper" style="display: flex;" > 
+                <div class="fixed_button" onclick="handleFixedSectionSwap('abtme')">
+                    <p>About Me</p>
+                </div>
+
+                <div class="fixed_button"  onclick="handleFixedSectionSwap('cv')">
+                    <p>CV</p>
+                </div>
+
+                <div class="fixed_button" style="margin-right: 0;"  onclick="handleFixedSectionSwap('gallery')">
+                    <p>Gallery</p>
+                </div>
+            </div>
+
             <div class="section_wrapper" id="fixed_wrapper"> 
                 
                 <div id ="fixed_section_about_me" >
@@ -127,20 +142,6 @@
                    <p class="none">Under Construction!</p>
                 </div>
 
-            </div>
-
-            <div class="section_wrapper" id="fixed_wrapper" style="display: flex;" > 
-                <div class="fixed_button" onclick="handleFixedSectionSwap('abtme')">
-                    <p>About Me</p>
-                </div>
-
-                <div class="fixed_button"  onclick="handleFixedSectionSwap('cv')">
-                    <p>CV</p>
-                </div>
-
-                <div class="fixed_button" style="margin-right: 0;"  onclick="handleFixedSectionSwap('gallery')">
-                    <p>Gallery</p>
-                </div>
             </div>
         </div>
         
