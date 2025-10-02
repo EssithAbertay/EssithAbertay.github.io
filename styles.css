@@ -126,9 +126,11 @@ body {
 }
 
 .social_media{
-    margin: 10px;
-    height: 40px;
-    width: 40px;
+    margin: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 30px;
 }
 
 .section_wrapper{
