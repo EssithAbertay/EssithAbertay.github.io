@@ -30,20 +30,20 @@ body {
 .fixed_content {
     position: fixed;
     width: 35%;
-    height: 100vh;
+    height: max-content;
     display: inline-block;
 }
 
 
 
 #fixed_section_about_me {
-    display: block;
-    height: 80vh;
+    display: inline-block;
+    height: 100%;
 }
 
 #fixed_section_cv{
     display: none;
-    height: 80vh;
+    height: 100%;
     #cv{
         border-radius: 16px;
         width: 100%;
