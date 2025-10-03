@@ -73,6 +73,12 @@ body {
     font-size: calc(0.25vw + 0.25vh + 0.75vmin);
 }
 
+.skills_box{
+    width: 50%; 
+    float: left; 
+    text-align: center;
+}
+
 .fixed_button{
     background-color: #5346A8;
     border-radius: 16px;
@@ -176,6 +182,26 @@ body {
 
 .flex{
     display:flex;
+}
+
+
+#description_gps{    
+    border-radius: 16px;
+    text-align: center;
+    background-color: #5a4cb8;
+    padding: 15px;
+    margin-right: 15px;
+    width:33%
+}
+
+#embeds_gps{    
+    margin-right: 15px;
+}
+
+#features_gps{    
+    border-radius: 16px;
+    text-align: left;
+    background-color: #5a4cb8;
 }
 
 .highlighted_project_text{
