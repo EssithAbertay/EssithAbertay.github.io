@@ -42,6 +42,7 @@ body {
 
 #fixed_section_cv{
     display: none;
+    width: 100%;
     height: 80vh;
     #cv{
         border-radius: 16px;
