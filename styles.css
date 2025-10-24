@@ -164,6 +164,7 @@ body {
     padding: 15px;
     padding-top: 15px;
     margin-bottom: 15px;
+    padding-bottom: 0px;
     background-color: #5346A8;
     border-radius: 16px;
     text-align: center;
@@ -234,6 +235,21 @@ body {
     width:60%;
 }
 
+.highlighted_project_tag_container{
+    display: flex;
+    padding: 0px;
+    
+    .highlighted_project_tag{
+        padding: 3px;
+        padding-left: 9px;
+        padding-right: 9px;
+        background-color: #5a4cb8;
+        border-radius: 16px;
+        margin-right: 15px;
+    }
+}
+
+
 .project_block
 {
     padding: 5px;
@@ -254,6 +270,7 @@ body {
 
 .expanded_project {
     padding: 15px;
+    padding-bottom: 0px;
     margin-bottom: 15px;
     background-color: #5346A8;
     overflow: hidden;
