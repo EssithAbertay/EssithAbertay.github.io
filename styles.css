@@ -235,6 +235,16 @@ body {
     width:60%;
 }
 
+.download_button{
+    background-color: #5a4cb8;
+    border-radius: 16px;    
+
+    >p {
+        color: white;
+        margin-left: 5px;
+    }
+}
+
 .highlighted_project_tag_container{
     display: flex;
     padding: 0px;
@@ -292,6 +302,9 @@ body {
 .expanded_project_embeds{
     width: 60%;
 }
+
+
+
 
 @media screen and (max-width: 1000px) {
   .fixed_content{
