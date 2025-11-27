@@ -141,7 +141,7 @@ body {
 }
 
 .section_wrapper{
-    background-color: darkslateblue;
+    background-color: #483d8b;
     border-radius: 20px;
     padding: 15px;
     margin: 15px;
@@ -186,18 +186,35 @@ body {
     display:flex;
 }
 
+.dropdown_box{
+    padding: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #5a4cb8;
+    border-radius: 16px;
+}
+
+#gps_block{
+    background-color: #5a4cb8;
+    padding: 15px;
+    border-radius: 16px;
+    width: 40%;
+    margin-right: 15px;
+    padding-bottom: 0;
+    height: fit-content;
+}
 
 #description_gps{    
     border-radius: 16px;
-    text-align: center;
     background-color: #5a4cb8;
     padding: 15px;
     margin-right: 15px;
-    width:33%
-}
+    width: 55%;
 
-#embeds_gps{    
-    margin-right: 15px;
+    p{
+        text-align: justify;
+        text-justify:distribute;
+    }
 }
 
 #features_gps{    
@@ -214,7 +231,7 @@ body {
     margin-right: 15px;
     border-radius: 16px;
     text-align: center;
-  
+    height: fit-content;
     background-color: #5a4cb8;
 }
 
