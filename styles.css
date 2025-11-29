@@ -9,6 +9,7 @@ p{
     color:white;
 }
 
+
 body {
     margin: 0;
     background-color: #3E3579;
@@ -41,6 +42,13 @@ button:hover{
 #page_header>h1>b{
        color: red; 
     font-size: larger;
+}
+
+
+#webring{
+    >p>a{
+        color: white;
+    }
 }
 
 .fixed_content {
