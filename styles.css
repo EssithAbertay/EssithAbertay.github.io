@@ -3,11 +3,27 @@ html{
     color:white;
 }
 
+
+p{
+    font-family: 'Consolas';
+    color:white;
+}
+
 body {
     margin: 0;
     background-color: #3E3579;
 }
 
+button{
+    cursor: pointer; 
+    background-color: #5a4cb8;  
+    border: none; 
+    color: white;
+}
+
+button:hover{ 
+    background-color: #6859cf;
+}
 
 .title_highlight{
     color:red;
@@ -198,7 +214,7 @@ body {
     background-color: #5a4cb8;
     padding: 15px;
     border-radius: 16px;
-    width: 40%;
+    width: 45%;
     margin-right: 15px;
     padding-bottom: 0;
     height: fit-content;
@@ -259,6 +275,23 @@ body {
     >p {
         color: white;
         margin-left: 5px;
+    }
+}
+
+.highlighted_project_tag_container_gps{
+    display: flex;
+    padding: 0px;
+    
+    .highlighted_project_tag_gps{
+        padding: 3px;
+        padding-left: 9px;
+        padding-right: 9px;
+        background-color: #6555cd;
+        border-radius: 16px;
+        margin-right: 15px;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
