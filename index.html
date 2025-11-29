@@ -39,8 +39,8 @@
             }
         }
 
-        function handleDropdownClick() {
-            var x = document.getElementById("dropdown_section")
+        function handleDropdownClick(id) {
+            var x = document.getElementById(id)
             if (x.style.display === "none") {
                 x.style.display = "block";
             } 
@@ -163,8 +163,6 @@
                         <h1><b>A.</b>Alexander <b>T.</b>Thomson <b>Developer</b></h1>
                 </div>
 
-
-
                 <div class="highlighted_project">
 
                     <div class = "highlighted_project_title">
@@ -194,15 +192,13 @@
                         <div style="width: 60%; display: flex; flex-direction: column;">
                             <iframe style="border-radius: 16px; width: 100%; height: 100%;margin-bottom: 15px;" src="https://www.youtube.com/embed/56XEQf_lNwM?si=irydX5VynW--RleD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 
-                            <button id="x" onclick="handleDropdownClick()" style="width: 100%; border-radius: 16px; ">
+                            <button onclick="handleDropdownClick('dropdown_section_gps')" style="width: 100%; border-radius: 16px; ">
                                 <p>More Info &#8626;</p>
                             </button>
                         </div>  
-                    
                     </div>
                     
-
-                    <div id="dropdown_section" style="display: none;margin-bottom: 15px;">
+                    <div id="dropdown_section_gps" style="display: none;margin-bottom: 15px;">
                         <div class="flex">
                             <div id="description_gps">
                                 <p>
@@ -244,68 +240,102 @@
                             </div>  
                         </div>
                     </div>
-                    
-         
                 </div>
 
-                <div class="highlighted_project">
+                <div class="highlighted_project" style="padding-bottom: 15px;">
                     <div class = "highlighted_project_title">
                         <h2>DX11 River Scene</h2>
                     </div>  
 
                     <div class="flex">
                         <div class="highlighted_project_text">
-                            <p style="float: left; width :45%;">Direct X11 scene created as university coursework.<br><br>The scene features a Gerstner wave simulation as well as a controllable riverbed alongside multiple light types and shadows.</p>
+                            <img src="images/GPS.gif" style="width: 100%; margin-bottom: 15px; border-radius: 15px;">
 
-                            <div style="text-align: left; float: left; width :45%; margin-right: 10px;">
 
-                                <ul>
-                                    <p style="text-align: left;"><u>Features</u></p>
-                                    <li>Gerstner wave simulation</li>
-                                    <li>Customisable river terrain</li>
-                                    <li>Dynamic and static tessellation</li>
-                                    <li>Bloom with compute shader</li>
-                                    <li>Directional, spot, and point lights</li>
-                                    <li>Depth map shadows</li>
-                                    <li>Model loading</li>
-                                    <li>Blinn-Phong specular highlights</li>
-                                </ul>
-
-                            </div>
-
-                            
-                        </div>
-
-                        <div class = "highlighted_project_embed">
-                            <iframe style="border-radius: 16px; margin-bottom: 15px;" width="100%" height="315" src="https://www.youtube.com/embed/pZnsJxjVMNE?si=HxT3KdsUFWFuPhou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
                             <a href="https://essith.itch.io/direct-x11-scene" style="text-decoration: none;">
-                                <div class="download_button" style="display: flex; justify-content: center;">
+                                <div class="download_button" style="display: flex; justify-content: center; ">
                                     <img src="images\download.svg">
                                     <p>Download it here</p>
                                 </div>
                             </a>
-                        
+                  
+                            <div class = "highlighted_project_tag_container">
+                                <p class = "highlighted_project_tag">C++</p>
+                                <p class = "highlighted_project_tag">DX11</p>
+                                <p class = "highlighted_project_tag">Git</p>
+                            </div>
+
                         </div>
 
-                    
+                        <div style="width: 60%; display: flex; flex-direction: column;">
+                            <iframe style="border-radius: 16px; width: 100%; height: 100%;margin-bottom: 15px;" src="https://www.youtube.com/embed/56XEQf_lNwM?si=irydX5VynW--RleD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                
+                            <button onclick="handleDropdownClick('dropdown_section_dx11')" style="width: 100%; border-radius: 16px; ">
+                                <p>More Info &#8626;</p>
+                            </button>
+                        </div>  
                     </div>  
                     
-                    <div class = "highlighted_project_tag_container">
-                        <p class = "highlighted_project_tag">C++</p>
-                        <p class = "highlighted_project_tag">DX11</p>
-                        <p class = "highlighted_project_tag">Git</p>
+                    <div id="dropdown_section_dx11" style="display: none;">
+                        <p style="float: left; width :45%;">Direct X11 scene created as university coursework.<br><br>The scene features a Gerstner wave simulation as well as a controllable riverbed alongside multiple light types and shadows.</p>
+
+                        <div style="text-align: left; float: left; width :45%; margin-right: 10px;">
+
+                            <ul>
+                                <p style="text-align: left;"><u>Features</u></p>
+                                <li>Gerstner wave simulation</li>
+                                <li>Customisable river terrain</li>
+                                <li>Dynamic and static tessellation</li>
+                                <li>Bloom with compute shader</li>
+                                <li>Directional, spot, and point lights</li>
+                                <li>Depth map shadows</li>
+                                <li>Model loading</li>
+                                <li>Blinn-Phong specular highlights</li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="highlighted_project">
+                <div class="highlighted_project" style="padding-bottom: 15px;">
 
                     <div class = "highlighted_project_title">
                         <h2>OpenGL Bookstore Scene</h2>
                     </div>
 
                     <div class="flex">
+                        
                         <div class="highlighted_project_text">
+                            <img src="images/GPS.gif" style="width: 100%; margin-bottom: 15px; border-radius: 15px;">
+
+                            <a href="https://essith.itch.io/opengl-scene" style="text-decoration: none;">
+                                <div class="download_button" style="display: flex; justify-content: center;">
+                                    <img src="images\download.svg">
+                                    <p>Download it here</p>
+                                </div>
+                            </a>
+
+
+                            <div class = "highlighted_project_tag_container">
+                                <p class = "highlighted_project_tag">C++</p>
+                                <p class = "highlighted_project_tag">OpenGL</p>
+                                <p class = "highlighted_project_tag">Git</p>
+                            </div>
+                        </div>
+
+
+                        <div style="width: 60%; display: flex; flex-direction: column;">
+                            <iframe  style="border-radius: 16px; width: 100%; height: 100%;margin-bottom: 15px;" src="https://www.youtube.com/embed/jbEG_Spt3g8?si=1U2cm6zkSSfGImPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                            <button onclick="handleDropdownClick('dropdown_section_ogl')" style="width: 100%; border-radius: 16px; ">
+                                <p>More Info &#8626;</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="dropdown_section_ogl" style="display: none;">
+                    
+                        <div>
                             <p style="width:45%;float: left;">OpenGL scene created as university coursework.<br><br>The scene makes use of many features, such as procedurally generated books and bookshelves.</p>
 
                             <div style="text-align: left; float: left; width :45%; margin-right: 10px;">
@@ -318,24 +348,9 @@
                                     <li>Transparency</li>
                                     <li>Lighting</li>
                                 </ul>
-                            </div>
+                            </div>   
+                        
                         </div>
-                        <div class = "highlighted_project_embed">
-                            <iframe style="border-radius: 16px; margin-bottom: 15px;" width="100%" height="315" src="https://www.youtube.com/embed/jbEG_Spt3g8?si=1U2cm6zkSSfGImPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            
-                            
-                            <a href="https://essith.itch.io/opengl-scene" style="text-decoration: none;">
-                                <div class="download_button" style="display: flex; justify-content: center;">
-                                    <img src="images\download.svg">
-                                    <p>Download it here</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class = "highlighted_project_tag_container">
-                        <p class = "highlighted_project_tag">C++</p>
-                        <p class = "highlighted_project_tag">OpenGL</p>
                     </div>
                 </div>
 
