@@ -45,14 +45,16 @@ button:hover{
 }
 
 
-#webring{
-    >p>a{
-        color: white;
-    }
 
-    >p>a:visited{
-        color: white;
-    }
+#webring p a{
+    color: white;
+}
+#webring p a:visited {
+    color: white;
+}
+
+#webring p a:hover {
+    color: red;
 }
 
 .fixed_content {
