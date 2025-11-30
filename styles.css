@@ -239,7 +239,7 @@ button:hover{
     height: fit-content;
 }
 
-#description_gps{    
+.description{    
     border-radius: 16px;
     background-color: #5a4cb8;
     padding: 15px;
@@ -252,8 +252,9 @@ button:hover{
     }
 }
 
-#features_gps{    
+.features{    
     border-radius: 16px;
+    width: 45%;
     text-align: left;
     background-color: #5a4cb8;
 }
