@@ -168,8 +168,13 @@ button:hover{
     margin-bottom: 10px;
     height: 30px;
     width: 30px;
+    transition: transform 250ms ease-out;
+    
+  
 }
-
+.social_media:hover {
+    transform: translateY(-10px);
+}
 .section_wrapper{
     background-color: #483d8b;
     border-radius: 20px;
