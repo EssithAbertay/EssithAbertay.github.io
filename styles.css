@@ -57,6 +57,18 @@ button:hover{
     color: red;
 }
 
+#dare p a{
+    color: white;
+}
+#dare p a:visited {
+    color: white;
+}
+
+#dare p a:hover {
+    color: red;
+}
+
+
 .fixed_content {
     position: fixed;
     width: 35%;
