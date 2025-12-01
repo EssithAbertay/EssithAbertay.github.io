@@ -57,14 +57,14 @@ button:hover{
     color: red;
 }
 
-#dare p a{
+#dare{
     color: white;
 }
-#dare p a:visited {
+#dare:visited{
     color: white;
 }
 
-#dare p a:hover {
+#dare:hover{
     color: red;
 }
 
