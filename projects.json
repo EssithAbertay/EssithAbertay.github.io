@@ -1,0 +1,106 @@
+[
+    {
+        "id": "wcs",
+        "filter" : "personal",
+        "title": "Flask World Cup Predictions Site",
+        "subtitle": "Flask site that's used run a predictions league",
+        "description": "A flask project I'm working on for friends and family, the site will be used for a predictions league during the 2026 world cup. For the project I've had to learn a lot of new things largley with python and the Flask framework.",
+        "progress": "In Progress ⧖",
+        "image": "",
+        "videoLink": "",
+        "downloadLink": "",
+        "link": "",
+        "tags": ["Flask", "Python","Bootstrap","HTML"]
+    },
+        
+    {
+        "id": "plague",
+        "filter" : "personal",
+        "title": "Masquer Plague",
+        "subtitle": "2026 Global Game Jam Project",
+        "description": "Very silly game in godot that I worked on during the 2026 global game jam, in Masquer Plague you take on the role of a plague doctor who must 'cure' infected visitors, use your special mask to work out who's infected but be careful not to scare too many guests! <br> I was one of two programmers in a team of five. <br> I mainly worked on the NPC/Enemy systems and on how the different furniture was placed in the scene. <br> This was my first major project in Godot, and so a lot of the time I spent on this project was on learning the basics of the engine, we used C# for the proramming which I think in hindsight was a mistake as most documentaion is focused on GD Script, for future projects in the engine I'll be using it instead.",
+        "progress": "Complete ✓",
+        "image": "images/masqueplague.png",
+        "videoLink": "",
+        "downloadLink": "https://ceriseartss.itch.io/masquer-plague",
+        "tags": ["Godot", "C#"]
+    },
+
+    {
+        "id": "sfmlfw",
+        "filter" : "personal",
+        "title": "SFML Framework",
+        "subtitle": "Basic framework for SFML Projects",
+        "description": "SFML Framework that I worked on in prepartion for fourth year modules, specifically I worked on the game loop components,as well as the collision detection (Which I'd quite like to update!)",
+        "progress": "In Progress ⧖",
+        "image": "",
+        "videoLink": "",
+        "downloadLink": "https://github.com/EssithAbertay/Framework",
+        "tags": ["SFML", "C++"]
+    },
+
+    {
+        "id": "hockey",
+        "filter" : "personal",
+        "title": "Isometric Hockey Game",
+        "subtitle": "",
+        "description": "",
+        "progress": "In Progress ⧖",
+        "image": "",
+        "videoLink": "",
+        "downloadLink": "",
+        "tags": ["Godot", "GD Script"]
+    },
+
+    {
+        "id": "ogl",
+        "filter" : "uni",
+        "title": "OpenGL Bookstore Scene",
+        "subtitle": "",
+        "description": "OpenGL scene created for second year university coursework. <br> The scene makes use of many OpenGl features, such as procedurally generated books and bookshelves, model loading, use of the stencil buffer, transparency, and lighting.",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "https://www.youtube.com/embed/jbEG_Spt3g8?si=uAjoCgN0wB6_Lu0x",
+        "downloadLink": "https://essith.itch.io/opengl-scene",
+        "tags": ["C++", "OpenGL", "Git"]
+    },
+
+    {
+        "id": "btse",
+        "filter" : "uni",
+        "title": "Bullet Types and Status Effects Mechanic",
+        "subtitle": "Unreal Engine 5 code project where different bullets apply different effects to objects in the scene",
+        "description": "Game mechanic made in Unreal Engine 5 as part of third-year university coursework. <br> The project was fully made using C++ with minimal blueprint useage for UI.<br> The mechanic uses a status effects component to apply different effects to placeholder enemies based on the bullet type fired:<ul><li>Set enemies on fire dealing damage over time, the fire spreads to other burnable enemies</li><li>Turn enemies into the centre of a gravity field, pulling other objects and enemies toward them</li><li>Turn an enemy into a stacking bomb that explodes after a time and is stronger the more times it is applied</li></ul>When taking damage the placeholder enemies will flash and display the damage recently taken.",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "https://www.youtube.com/embed/ug6RsjUxKQs?si=eUzaUUaAzSVzIi6I",
+        "downloadLink": "https://essith.itch.io/ue5-bullet-type-and-status-effects",
+        "tags": ["C++", "Unreal Engine"]
+    },
+
+        {
+        "id": "titc",
+        "filter" : "uni",
+        "title": "Two in the Chamber",
+        "subtitle": "PS5 Arena fighter where two players can collect different weapons, made using the Skateboard Engine",
+        "description": "Two in the Chamber is a two-player platform fighter for the PS5 made using an in-house engine, 'Skateboard', as part of university coursework. <br> Two players control their respecitive character that can use different weapons with different characteristics to fight one another, as well as collect upgrades to improve their strength. <br> I worked on the game in a group as one of three programmers and tackled lots of different challenges. <br> While primarily worked on the weapon systems, like how the different weapons interacted with the player, I also worked on the the player upgrade system, and a dynamic music system that the music would remain seemless between the splash screen, menus, and gameplay.",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "https://www.youtube.com/embed/HKPLEa034f0?si=1fYty2bdWW6kRa0V",
+        "downloadLink": "",
+        "tags": ["C++", "Skateboard Engine", "PS5", "Git"]
+    },
+
+        {
+        "id": "bhi",
+        "filter" : "uni",
+        "title": "Bullet Hell Infinite",
+        "subtitle": "Infinite runner bullet hell made using SFML",
+        "description": "Made as part of first year university coursework using SFML and C++, Bullet Hell Infinite is an infite runner game where the player must dodge dozens of projectiles and enemies to survive. <br> While playing different power-ups can be collected to empower to player and change how their ship behaves: <ul><li>Double Shot</li> <li>Triple Shot</li> <li>Super Speed</li> <li>Invincibility</li> <li>Healing</li></ul> At the end of a game the player's score is saved to a file and the top scores can be viewed from the menu.",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "https://www.youtube.com/embed/96GMXWLxU6I?si=1sH8c2MnCPaYwlGX",
+        "downloadLink": "https://essith.itch.io/bullet-hell-infinite",
+        "tags": ["C++", "SFML", "Git"]
+    }
+]
