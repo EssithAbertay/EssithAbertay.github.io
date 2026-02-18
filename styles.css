@@ -311,9 +311,14 @@ button:hover{
     }
 }
  
+#webring{
+    text-align: center;
+}
+
 #webring p a{
     color: white;
 }
+
 #webring p a:visited {
     color: white;
 }
@@ -321,6 +326,19 @@ button:hover{
 #webring p a:hover {
     color: red;
 }
+
+#footer p a{
+    color: white;
+}
+
+#footer p a:visited {
+    color: white;
+}
+
+#footer p a:hover {
+    color: red;
+}
+
 
 #footer{
     color: rgb(177, 177, 177);
