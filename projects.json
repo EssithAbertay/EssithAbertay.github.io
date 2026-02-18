@@ -3,7 +3,7 @@
         "id": "wcs",
         "filter" : "personal",
         "title": "Flask World Cup Predictions Site",
-        "subtitle": "Flask site that's used run a predictions league",
+        "subtitle": "Flask site that's used to run a predictions league",
         "description": "A flask project I'm working on for friends and family, the site will be used for a predictions league during the 2026 world cup. For the project I've had to learn a lot of new things largley with python and the Flask framework.",
         "progress": "In Progress ⧖",
         "image": "",
