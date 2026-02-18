@@ -20,7 +20,9 @@ function loadProjects() {
                 else if (project.filter == "uni") {
                     box = document.getElementById('dynamic_uni_projects');
                 }
-
+                else{
+                    return;
+                }
                 const projectDiv = document.createElement('div');
 
                 projectDiv.className = 'project-item'; 

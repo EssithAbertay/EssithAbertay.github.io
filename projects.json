@@ -91,9 +91,35 @@
         "tags": ["C++", "Skateboard Engine", "PS5", "Git"]
     },
 
-        {
+    {
         "id": "bhi",
         "filter" : "uni",
+        "title": "Bullet Hell Infinite",
+        "subtitle": "Infinite runner bullet hell made using SFML",
+        "description": "Made as part of first year university coursework using SFML and C++, Bullet Hell Infinite is an infinite runner game where the player must dodge dozens of projectiles and enemies to survive. <br> While playing different power-ups can be collected to empower to player and change how their ship behaves: <ul><li>Double Shot</li> <li>Triple Shot</li> <li>Super Speed</li> <li>Invincibility</li> <li>Healing</li></ul> At the end of a game the player's score is saved to a file and the top scores can be viewed from the menu.",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "https://www.youtube.com/embed/96GMXWLxU6I?si=1sH8c2MnCPaYwlGX",
+        "downloadLink": "https://essith.itch.io/bullet-hell-infinite",
+        "tags": ["C++", "SFML", "Git"]
+    },
+
+        {
+        "id": "gps",
+        "filter" : "highlighted",
+        "title": "Galactic Postal Servitude",
+        "subtitle": "Infinite runner bullet hell made using SFML",
+        "description": "Made as part of first year university coursework using SFML and C++, Bullet Hell Infinite is an infinite runner game where the player must dodge dozens of projectiles and enemies to survive. <br> While playing different power-ups can be collected to empower to player and change how their ship behaves: <ul><li>Double Shot</li> <li>Triple Shot</li> <li>Super Speed</li> <li>Invincibility</li> <li>Healing</li></ul> At the end of a game the player's score is saved to a file and the top scores can be viewed from the menu.",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "https://www.youtube.com/embed/96GMXWLxU6I?si=1sH8c2MnCPaYwlGX",
+        "downloadLink": "https://essith.itch.io/bullet-hell-infinite",
+        "tags": ["C++", "SFML", "Git"]
+    },
+
+        {
+        "id": "dx11",
+        "filter" : "highlighted",
         "title": "Bullet Hell Infinite",
         "subtitle": "Infinite runner bullet hell made using SFML",
         "description": "Made as part of first year university coursework using SFML and C++, Bullet Hell Infinite is an infinite runner game where the player must dodge dozens of projectiles and enemies to survive. <br> While playing different power-ups can be collected to empower to player and change how their ship behaves: <ul><li>Double Shot</li> <li>Triple Shot</li> <li>Super Speed</li> <li>Invincibility</li> <li>Healing</li></ul> At the end of a game the player's score is saved to a file and the top scores can be viewed from the menu.",
