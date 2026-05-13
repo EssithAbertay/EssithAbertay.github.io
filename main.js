@@ -62,7 +62,7 @@ function loadProjects() {
                     if(project.videoLink != "") // check if the video link is empty
                     {
                         videoBox = `
-                        <iframe  style="border-radius: 16px; width: 100%; margin-bottom: 15px;" src="${project.videoLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe  style="border-radius: 16px; width: 100%; height: 40%; margin-bottom: 15px;" src="${project.videoLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         `
                     }
                     else if(project.image != "") // use an image if no video 
