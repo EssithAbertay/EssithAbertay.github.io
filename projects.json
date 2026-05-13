@@ -125,10 +125,10 @@
         "title": "DBM Lightning Generation",
         "subtitle": "",
         "description": "Procedural Lightning generator built in the Raylib games framework. The generated lightning is based off of the Dielectric Breakdown Model, which is a probabilistic model that simulates an electrical potential field to find candidates for propogation",
-        "features":"<ul><p><u>Features</u></p><li>Raylib</li><li>GPU-Multithreading</li><li>Eta Control</li><li>Target Weighting</li><li>User Control</li><li>Inbuilt Testing</li></ul>",
+        "features":"<ul><p><u>Features</u></p><li>GPU-Multithreading</li><li>Eta Control</li><li>Target Weighting</li><li>User Control</li><li>Inbuilt Testing</li></ul>",
         "progress": "Complete ✓",
         "image": "images/artefact.gif",
-        "videoLink": "https://youtu.be/k6q-h3krJl8",
+        "videoLink": "https://www.youtube.com/embed/k6q-h3krJl8?si=6OgDBTFXp16qc0CA",
         "downloadLink": "https://essith.itch.io/dbm-lightning-generation",
         "tags": ["C++", "Raylib", "GPU Multithreading"]  
     },
@@ -156,7 +156,7 @@
         "features":"",
         "progress": "Complete ✓",
         "image": "",
-        "videoLink": "https://www.youtube.com/watch?v=iuXXfnf7Ayk",
+        "videoLink": "https://www.youtube.com/embed/iuXXfnf7Ayk",
         "downloadLink": "https://essith.itch.io/dynamic-music-game",
         "tags": ["C++", "Raylib", "FMOD"]  
     }
