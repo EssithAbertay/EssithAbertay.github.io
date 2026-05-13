@@ -1,4 +1,3 @@
-
 function loadProjects() {
     fetch('./projects.json')
         .then(response => {
@@ -81,7 +80,7 @@ function loadProjects() {
 
                     <div class = "project_block" id="${project.id}" style = "display: none;">
                         ${tagsHTML}
-                        <p>Status: ${project.progress}</p>
+                        <p style="text-align:center">Status: ${project.progress}</p>
                         ${videoBox}
                         ${imageBox}
                         <p>${project.description}</p>
@@ -94,7 +93,6 @@ function loadProjects() {
                     videoBox = `<iframe  style="border-radius: 16px; width: 100%; height: 100%;margin-bottom: 15px;" src="${project.videoLink}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
                     imageBox = `<img src="${project.image}" style="width: 100%; margin-bottom: 15px; border-radius: 15px;">`
 
-                    console.log("HELLO!");
                     projectDiv.innerHTML= `
                     <div class="highlighted_project">
                         <div class = "highlighted_project_title">
