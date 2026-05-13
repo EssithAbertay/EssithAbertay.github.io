@@ -105,7 +105,7 @@
         "tags": ["C++", "SFML", "Git"]
     },
 
-        {
+    {
         "id": "gps",
         "filter" : "highlighted",
         "title": "<h2 style=\"margin-bottom: 0\">Galactic Postal Servitude</h2>",
@@ -120,6 +120,20 @@
     },
 
         {
+        "id": "hon",
+        "filter" : "highlighted",
+        "title": "DBM Lightning Generation",
+        "subtitle": "More Info Coming Soon!",
+        "description": "More Info Coming Soon!",
+        "features":"",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "",
+        "downloadLink": "",
+        "tags": ["C++", "Raylib", "GPU Multithreading"]  
+    },
+
+    {
         "id": "dx11",
         "filter" : "highlighted",
         "title": "DirectX 11 River Scene",
@@ -131,5 +145,20 @@
         "videoLink": "https://www.youtube.com/embed/pZnsJxjVMNE?si=8R_Z2l0GpmEzFf_U",
         "downloadLink": "https://essith.itch.io/direct-x11-scene",
         "tags": ["C++", "DX11", "Git"]  
+    },
+
+    {
+        "id": "audio",
+        "filter" : "uni",
+        "title": "Intestiy Audio Game",
+        "subtitle": "More Info Coming Soon!",
+        "description": "More Info Coming Soon!",
+        "features":"",
+        "progress": "Complete ✓",
+        "image": "",
+        "videoLink": "https://www.youtube.com/watch?v=iuXXfnf7Ayk",
+        "downloadLink": "",
+        "tags": ["C++", "Raylib", "FMOD"]  
     }
+
 ]
